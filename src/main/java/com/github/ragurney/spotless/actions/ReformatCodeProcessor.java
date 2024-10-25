@@ -126,7 +126,7 @@ public class ReformatCodeProcessor extends AbstractLayoutCodeProcessor {
 
     ExternalSystemTaskExecutionSettings settings = new ExternalSystemTaskExecutionSettings();
     settings.setExternalProjectPath(myProject.getBasePath());
-    settings.setTaskNames(List.of("spotlessApply"));
+    settings.setTaskNames(List.of("applyFormatting"));
     if (!isReformatAllEnabled) {
       settings.setScriptParameters(
           String.format(
